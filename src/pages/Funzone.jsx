@@ -1,12 +1,12 @@
 import { useQuery } from "@apollo/client";
 import React from "react";
 
-import funzone from "../queries/funzone";
+import allVideos from "../queries/allVideos";
 
 function Funzone() {
-  const { data, loading } = useQuery(funzone);
+  const { data, loading } = useQuery(allVideos);
 
-  const items = data?.funzone?.items;
+  const items = data?.allVideos?.items?.tags?.name;
 
   if (loading) {
     return <div>loading...</div>;
