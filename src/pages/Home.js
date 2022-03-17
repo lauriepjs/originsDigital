@@ -1,13 +1,24 @@
+import { useQuery } from "@apollo/client";
 import React from "react";
-import GetVideos from "../components/GetVideos";
 
-const Home = () => {
+import allVideos from "../queries/allVideos";
+
+function Home() {
+  const { data, loading } = useQuery(allVideos);
+
+  const items = data?.allVideos?.items;
+
+  if (loading) {
+    return <div>loading...</div>;
+  }
+
   return (
     <div>
-      <h1>Accueil</h1>
-      <GetVideos />
+      {items.map((video) => (
+        <div key={video.id}> {video.name} </div>
+      ))}
     </div>
   );
-};
+}
 
 export default Home;
