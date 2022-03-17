@@ -2,7 +2,7 @@ import { gql } from '@apollo/client';
 
 const TESTIMONIALES = gql`
   query getTestimonialesVideos($after: String, $before: String) {
-    allVideos(limit: 5, after: $after, before: $before, tags: "Testimoniales") {
+    allVideos(limit: 4, after: $after, before: $before, tags: "Testimoniales") {
       items {
         name
         id

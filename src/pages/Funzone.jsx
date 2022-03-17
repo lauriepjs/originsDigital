@@ -1,11 +1,24 @@
-import React from 'react';
+import { useQuery } from "@apollo/client";
+import React from "react";
 
-const Funzone = () => {
+import funzone from "../queries/funzone";
+
+function Funzone() {
+  const { data, loading } = useQuery(funzone);
+
+  const items = data?.funzone?.items;
+
+  if (loading) {
+    return <div>loading...</div>;
+  }
+
   return (
     <div>
-      <h1>Funzone page</h1>
+      {items.map((video) => (
+        <div key={video.id}> {video.name} </div>
+      ))}
     </div>
   );
-};
+}
 
 export default Funzone;
