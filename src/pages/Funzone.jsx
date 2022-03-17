@@ -13,10 +13,11 @@ function Funzone() {
   }
 
   return (
-    <div className="container">
+    <div className="Funzone">
       <div>
         <h3>FUNZONE</h3>{" "}
       </div>
+      <div className="container">
       {items.map((video) => (
         <ul>
           <li>
@@ -27,6 +28,7 @@ function Funzone() {
           </li>
         </ul>
       ))}
+      </div>
     </div>
   );
 }

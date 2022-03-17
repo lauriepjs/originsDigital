@@ -67,9 +67,12 @@ code {
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .background{
   width: 100%;
 }
+ h3{
+   padding: 15px;
+ }

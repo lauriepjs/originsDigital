@@ -13,10 +13,11 @@ function Testimonials() {
   }
 
   return (
-    <div className="container">
+    <div className="testimonials">
       <div>
         <h3>TESTIMONIALS</h3>{" "}
       </div>
+      <div className="container">
       {items.map((video) => (
         <ul>
           <li>
@@ -27,6 +28,7 @@ function Testimonials() {
           </li>
         </ul>
       ))}
+      </div>
     </div>
   );
 }
