@@ -5,9 +5,49 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #010d18;
+  color : white;
+  font-size: 12px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* -------- FOOTER --------- */
+.logofb{
+  display: flex;
+  justify-content: space-between;
+}
+.logoRS{
+  display: flex;
+  justify-content: space-around;
+}
+.rgpd{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
+}
+
+/* -------- HEADER--------- */
+.logo{
+  width: 100px;
+  /* height: auto; */
+}
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  margin: 3%;
+  align-items: center;
+}
+.nav {
+  color: white;
 }
