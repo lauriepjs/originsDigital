@@ -13,7 +13,8 @@ function Funzone() {
   }
 
   return (
-    <div>
+    <div className="card">
+      <h3>FUNZONE</h3> 
       {items.map((video) => (
         <div key={video.id}> {video.name} </div>
       ))}

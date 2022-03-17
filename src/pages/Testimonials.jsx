@@ -13,7 +13,8 @@ function Testimonials() {
   }
 
   return (
-    <div>
+    <div className="card">
+      <h3>TESTIMONIALS</h3> 
       {items.map((video) => (
         <div key={video.id}> {video.name} </div>
       ))}

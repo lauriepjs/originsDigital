@@ -51,3 +51,23 @@ code {
 .nav {
   color: white;
 }
+
+.card {
+  height: 100px;
+  border: 1px solid black;
+  transition: 0.7s;
+  flex: 1 1 30%;
+  margin: 5px;
+  background-color: grey;
+}
+.card:hover {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.background{
+  width: 100%;
+}

@@ -13,9 +13,20 @@ function Home() {
   }
 
   return (
-    <div>
+    <div className="container">
+      <div>
+        <img className="background" src="./assets/background.png" alt=""></img>
+      </div>
+      <h3>ALL VIDEO</h3> 
       {items.map((video) => (
-        <div key={video.id}> {video.name} </div>
+        <ul>
+          <li>
+            <div className="card" key={video.id}>
+              {" "}
+              {video.name}{" "}
+            </div>
+          </li>
+        </ul>
       ))}
     </div>
   );
