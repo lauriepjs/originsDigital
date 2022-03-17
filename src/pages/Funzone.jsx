@@ -1,7 +1,7 @@
 import { useQuery } from "@apollo/client";
 import React from "react";
 
-import funzone from "../queries/funzone"
+import funzone from "../queries/funzone";
 
 function Funzone() {
   const { data, loading } = useQuery(funzone);
@@ -14,7 +14,9 @@ function Funzone() {
 
   return (
     <div className="container">
-      <h3>FUNZONE</h3> 
+      <div>
+        <h3>FUNZONE</h3>{" "}
+      </div>
       {items.map((video) => (
         <ul>
           <li>

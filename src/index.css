@@ -20,6 +20,7 @@ code {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  list-style-type: none;
 }
 
 /* -------- FOOTER --------- */
@@ -59,7 +60,6 @@ code {
   flex: 1 1 30%;
   margin: 5px;
   background-color: grey;
-  /* justify-content: space-between; */
 }
 .card:hover {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5);

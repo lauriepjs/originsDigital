@@ -1,7 +1,7 @@
 import { useQuery } from "@apollo/client";
 import React from "react";
 
-import testimonials from "../queries/testimoniales"
+import testimonials from "../queries/testimoniales";
 
 function Testimonials() {
   const { data, loading } = useQuery(testimonials);
@@ -14,7 +14,9 @@ function Testimonials() {
 
   return (
     <div className="container">
-      <h3>TESTIMONIALS</h3> 
+      <div>
+        <h3>TESTIMONIALS</h3>{" "}
+      </div>
       {items.map((video) => (
         <ul>
           <li>

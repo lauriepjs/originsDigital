@@ -13,21 +13,28 @@ function Home() {
   }
 
   return (
-    <div className="container">
+    <div>
       <div>
-        <img className="background" src="./assets/background.png" alt=""></img>
+        <div className="img">
+          <img
+            className="background"
+            src="./assets/background.png"
+            alt=""
+          ></img>
+        </div>
+        <h3>ALL VIDEO</h3>
       </div>
-      <h3>ALL VIDEO</h3> 
-      {items.map((video) => (
-        <ul>
-          <li>
-            <div className="card" key={video.id}>
-              {" "}
-              {video.name}{" "}
-            </div>
-          </li>
-        </ul>
-      ))}
+      <div className="container">
+        {items.map((video) => (
+          <ul>
+            <li>
+              <div className="card" key={video.id}>
+                {video.name}{" "}
+              </div>
+            </li>
+          </ul>
+        ))}
+      </div>
     </div>
   );
 }
